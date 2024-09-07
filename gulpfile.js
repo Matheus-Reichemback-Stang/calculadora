@@ -35,7 +35,7 @@ const compileHtml = () => {
 
 
 
-exports.default = gulp.parallel(compileSass, compileJS)
+exports.default = gulp.parallel(compileHtml, compileSass, compileJS)
 exports.watch = () => {
     gulp.watch('./src/index.html', {ignoreInitial: false}, gulp.parallel(compileHtml))
     gulp.watch('./src/styles/*.scss', {ignoreInitial: false}, gulp.parallel(compileSass))
