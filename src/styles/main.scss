@@ -45,6 +45,15 @@
             }
         }
     }
+
+    @media(max-width: variables.$mobile){
+        width: 100%;
+        padding: 24px;
+
+        &__display{
+            padding: 8px 6px;
+        }
+    }
 }
 
 .social-links {
