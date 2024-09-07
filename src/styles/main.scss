@@ -1,5 +1,60 @@
+@use './variables.scss';
 @use './reset.scss';
 
-body{
-    background-color: black;
+.calculator {
+    width: 368px;
+    padding: 32px;
+    border-radius: 8px;
+    background-color: variables.$calculatorColor;
+    box-shadow: 0 0 64px variables.$shadowColor;
+
+    &__display{
+        width: 100%;
+        padding: 12px 6px;
+        margin-bottom: 16px;
+        font-size: 28px;
+        font-weight: bold;
+        text-align: right;
+    }
+
+    &__list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 8px;
+        text-align: center;
+
+        &__button{
+            height: 64px;
+            width: 100%;
+            border-radius: 8px;
+            border: none;
+            font-weight: bold;
+            font-size: 24px;
+            background-color: variables.$buttonColor;
+            color: variables.$buttonValueColor;
+            transition: all ease 0.3s;
+            cursor: pointer;
+
+            &:hover{
+                background-color: variables.$background;
+                color: variables.$shadowColor;
+            }
+
+            &:last-child{
+                grid-column: span 2;
+            }
+        }
+    }
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    margin-top: 32px;
+            
+    img{
+        height: 32px;
+    }
 }
