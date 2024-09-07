@@ -9,27 +9,26 @@
 <body>
     <div class="container">
         <div class="calculator">
-            <input class="calculator__display" type="text" disabled value="">
+            <input id="display" class="calculator__display" type="text" disabled value="">
             <div class="calculator__list">
-                <input class="calculator__list__button" type="button" value="AC">
-                <input class="calculator__list__button" type="button" value="Del">
-                <input class="calculator__list__button" type="button" value="%">
-                <input class="calculator__list__button" type="button" value="/">
+                <input id="all-clear" class="calculator__list__button calculator__list__button--symbol" type="button" value="AC">
+                <input id="delete" class="calculator__list__button calculator__list__button--symbol" type="button" value="Del">
+                <input class="calculator__list__button calculator__list__button--symbol" type="button" value=".">
+                <input class="calculator__list__button calculator__list__button--symbol" type="button" value="/">
                 <input class="calculator__list__button" type="button" value="7">
                 <input class="calculator__list__button" type="button" value="8">
                 <input class="calculator__list__button" type="button" value="9">
-                <input class="calculator__list__button" type="button" value="X">
+                <input class="calculator__list__button calculator__list__button--symbol" type="button" value="*">
                 <input class="calculator__list__button" type="button" value="4">
                 <input class="calculator__list__button" type="button" value="5">
                 <input class="calculator__list__button" type="button" value="6">
-                <input class="calculator__list__button" type="button" value="-">
+                <input class="calculator__list__button calculator__list__button--symbol" type="button" value="-">
                 <input class="calculator__list__button" type="button" value="1">
                 <input class="calculator__list__button" type="button" value="2">
                 <input class="calculator__list__button" type="button" value="3">
-                <input class="calculator__list__button" type="button" value="+">
+                <input class="calculator__list__button calculator__list__button--symbol" type="button" value="+">
                 <input class="calculator__list__button" type="button" value="0">
-                <input class="calculator__list__button" type="button" value=".">
-                <input class="calculator__list__button" type="button" value="=">
+                <input id="result" class="calculator__list__button calculator__list__button--symbol" type="button" value="=">
             </div>
         </div>
         <ul class="social-links">

@@ -35,13 +35,17 @@
             transition: all ease 0.3s;
             cursor: pointer;
 
+            &--symbol{
+                color: variables.$buttonValueColorSecondary;
+            }
+
             &:hover{
                 background-color: variables.$background;
                 color: variables.$shadowColor;
             }
 
             &:last-child{
-                grid-column: span 2;
+                grid-column: span 3;
             }
         }
     }
